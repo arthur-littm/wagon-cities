@@ -5,9 +5,13 @@ import { selectCity } from '../actions/index';
 
 class City extends Component {
 
+  handleClick = () => {
+    this.props.selectCity(this.props.city)
+  }
+
   render() {
     return (
-      <div className="city">
+      <div className="city" onClick={this.handleClick}>
         {this.props.city.name}
       </div>
     )

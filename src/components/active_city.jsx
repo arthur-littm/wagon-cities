@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 class ActiveCity extends Component {
 
   render() {
-    if (this.props.selectedCity) {
+    if (this.props.city) {
       return (
         <div className="active-city">
-          <h3>{this.props.selectedCity.name}</h3>
-          <img src={`https://kitt.lewagon.com/placeholder/cities/${this.props.selectedCity.slug}
+          <h3>{this.props.city.name}</h3>
+          <img src={`https://kitt.lewagon.com/placeholder/cities/${this.props.city.slug}
   `} alt=""/>
         </div>
       )
